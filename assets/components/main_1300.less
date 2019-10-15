@@ -1,0 +1,281 @@
+@media (min-width: 851px) {
+
+	header {
+		background: linear-gradient(to bottom, #7542bb, #ba52a8);
+		background-size: cover;
+		height: 557px;
+		// padding-top: 50px;
+		padding: 50px;
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+
+			.menu {
+				display: none;
+			}
+
+			.quote {
+				background: transparent;
+				.borderNone;
+				border: 1px solid #fff;
+				border-radius: 50px;
+				padding: 10px 20px;
+				color: #fff;
+				order: 3;
+				cursor: pointer;
+
+				&:hover {
+					border: 1px solid red;
+				}
+			}
+
+			a {
+				order: 1;
+				text-decoration: none;
+				color: #fff;
+				font-size: 16px;
+				transition: 1s;
+			}
+
+			.menuNav li:not(:last-child) {
+				margin-right: 10px;
+			}
+
+			.menuNav a {
+				font-size: 12px;
+			}
+
+			a:hover {
+				color: red;
+			}
+
+			ul, li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: inline
+			}
+		}
+	}
+
+	.information {
+		padding: 0 200px;
+	}
+
+	.claim {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		color: #fff;
+		padding: 80px 50px;
+
+		h2, h1, p {
+			display: inline-block;
+		}
+
+
+		h2 {
+			font-size: 14px;
+			// margin-bottom: 10px;
+
+		}
+
+		h1 {
+			font-size: 3em;
+			padding: 0 100px;
+			text-align: center;
+			// margin-bottom: 10px;
+
+		}
+
+		p {
+			padding: 0 100px;
+			text-align: center;
+			// margin-bottom: 10px;
+		}
+
+			button {
+			.buttonStyle;
+			background-color: #ffffff;
+			border: 7px solid rgba(146, 89, 191, 0.8);
+			color: #6a43c0;
+			text-transform: uppercase;
+			cursor: pointer;
+
+			&:hover {
+				border: 7px solid red;
+			}
+		}
+	}
+
+	.helpYou {
+
+		.todd  {
+			width: 870px;
+
+			img {
+				right: 376px;
+			}
+		}
+	}
+
+	section .ourServices {
+		padding-top: 200px;
+		margin-top: 100px;
+
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		position: relative;
+
+		 .serviceCard {
+			margin-left: 20px;
+		}
+
+		& > h2 {
+			position: absolute;
+			top: -7px;
+		}
+
+		& > img {
+			position: absolute;
+			top: 66px;
+		}
+
+		& > p {
+			position: absolute;
+			top: 75px;
+
+			padding: 0 100px;
+		}
+	}
+
+	.bg-portfolio {
+		width: 980px;
+		background: #fff;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+		padding: 20px 0;
+		margin-bottom: 50px;
+	}
+
+	.ourPortfolio {
+		.columnCenter;
+	}
+
+	.logoText {
+		padding: 0 50px 0 70%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		// flex-direction: column;
+		// flex-wrap: wrap;
+	}
+
+	.landingzap {
+		padding: 0 50px 0 70%;
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+
+	.buttonPortfolio {
+		margin-right: 20px;
+	}
+
+	.form {
+		background: @linear-gradient;
+		padding: 20px 20px;
+
+		form {
+			.columnCenter;
+		}
+
+		 h2 {
+		 	text-align: center;
+		 }
+
+		 img {
+		 	margin-bottom: 20px;
+		 }
+
+		.name, .email {
+			background: url('../img/iconName.png') no-repeat;
+			background-position: 5% 45%;
+			color: #fff;
+			outline: none;
+			border: 1px solid #c36bb6;
+			border-radius: 5px;
+			width: 238px;
+			height: 66px;
+			margin-bottom: 14px;
+			padding: 0 40px;
+		}
+
+		.email 	{
+			background: url('../img/iconEmail.png') no-repeat;
+			background-position: 5% 48%;
+		}
+
+		textarea {
+			background: url('../img/iconTextarea.png') no-repeat;
+			background-position: 5% 7%;
+			color: #fff;
+			outline: none;
+			border: 1px solid #c36bb6;
+			border-radius: 5px;
+			width: 238px;
+			height: 222px;	
+			margin-bottom: 20px;
+			padding: 20px 40px;		
+		}
+		
+		input::placeholder {
+			color: #fff;
+		}
+
+		textarea::placeholder {
+			color: #fff;
+		}
+
+		button {
+			.buttonStyle;
+			background: #fff;
+			color: #673fbf;
+			border: none;
+			text-transform: uppercase;
+
+			.borderNone;
+		}
+	}
+
+	footer {
+		padding: 20px 40px;
+		background: #7542bb;
+		color: #fff;
+		line-height: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			cursor: pointer;
+			margin-right: 10px;
+		}
+
+		a:nth-child(1) {
+		margin-right: 45px;
+		}
+
+		& p:not(:last-child) {
+			margin-right: 60px;
+			margin-left: 15px;
+		}
+	}
+
+}
